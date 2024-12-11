@@ -8,7 +8,7 @@
 <body>
 <div class="container mt-5">
   <h1 class="mb-4">Borrow Book</h1>
-  <form action="/borrow?bookId=${bookId}" method="post">
+  <form action="/borrow" method="post">
     <div class="mb-3">
       <label for="id" class="form-label">Borrow ID</label>
       <input type="text" class="form-control" id="id" name="id" value="${borrowId}" readonly>
