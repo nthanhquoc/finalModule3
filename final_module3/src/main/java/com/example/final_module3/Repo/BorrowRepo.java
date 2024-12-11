@@ -7,8 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BorrowRepo {
-
-    // Phương thức lấy tất cả thông tin mượn sách
     public List<Borrow> findAll() {
         List<Borrow> borrows = new ArrayList<>();
         try {
@@ -37,8 +35,6 @@ public class BorrowRepo {
         }
         return borrows;
     }
-
-    // Phương thức thêm mới thông tin mượn sách
     public void save(Borrow borrow) {
         try {
             PreparedStatement statement = BaseRepo.getConnection().prepareStatement(
